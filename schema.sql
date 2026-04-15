@@ -1,0 +1,20 @@
+CREATE TABLE students(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+name TEXT,
+email TEXT,
+branch TEXT,
+cgpa TEXT
+);
+
+CREATE TABLE jobs(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+company TEXT,
+role TEXT,
+package TEXT
+);
+
+CREATE TABLE applications(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+student_name TEXT,
+job_id INTEGER
+);
